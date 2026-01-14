@@ -11,7 +11,7 @@
 *{ box-sizing: border-box; }
 
 body{
-  margin:0;
+  margin: 0;
   font-family: "Segoe UI","PingFang TC","Noto Sans TC",system-ui,sans-serif;
   background: var(--bg);
   color: var(--text);
@@ -22,33 +22,47 @@ body{
   margin: auto;
 }
 
+/* ================= Header ================= */
 .header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 0;
   border-bottom: 1px solid var(--border);
 }
 
 .brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
+h1{
+  margin: 0;
+  font-size: 20px;
+}
+
+.sub{
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* Avatar (Photo) */
 .avatar{
-  width:56px;
-  height:56px;
-  border-radius:50%;
-  background:#e5edff;
-  color:#2563eb;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:22px;
-  overflow:hidden;
-  border: 2px solid #fff; /* 白色邊框 */
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  background: #e5edff;
+  border: 2px solid #fff;
   box-shadow: 0 4px 10px rgba(16,24,40,0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   transition: transform .18s ease, box-shadow .18s ease;
 }
 
@@ -58,139 +72,187 @@ body{
 }
 
 .avatarImg{
-  width:100%;
-  height:100%;
-  display:block;
-  object-fit:cover;
-  border-radius:50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
-h1{
-  margin:0;
-  font-size:20px;
-}
-
-.sub{
-  margin:4px 0 0;
-  color: var(--muted);
-  font-size:13px;
-}
-
+/* Nav */
 .nav a{
-  margin-left:14px;
+  margin-left: 14px;
   color: var(--muted);
-  text-decoration:none;
-  font-size:14px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .nav a:hover{
   color: var(--brand);
 }
 
+/* ================= Layout ================= */
 main{
   padding: 40px 0;
-  display:grid;
+  display: grid;
   gap: 32px;
 }
 
+/* Card */
 .card{
   background: var(--card);
-  border:1px solid var(--border);
+  border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.08);
 }
 
 h2{
-  margin-top:0;
-  font-size:18px;
+  margin-top: 0;
+  font-size: 18px;
 }
 
 p{
-  line-height:1.7;
+  line-height: 1.7;
 }
 
 .hint{
   color: var(--muted);
-  font-size:14px;
+  font-size: 14px;
 }
 
+/* Chips */
 .chips{
-  list-style:none;
-  padding:0;
-  display:grid;
-  gap:8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
 }
 
 .chips li{
-  background:#f1f5f9;
-  padding:10px 14px;
-  border-radius:10px;
+  background: #f1f5f9;
+  padding: 10px 14px;
+  border-radius: 10px;
 }
 
+/* ================= Buttons ================= */
 .btn{
   background: var(--brand);
-  color:white;
-  border:none;
-  padding:10px 18px;
-  border-radius:10px;
-  cursor:pointer;
-  font-weight:600;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 
 .btn:hover{
-  background:#1d4ed8;
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.btn:active{
+  transform: scale(0.96);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
 
 .btn.ghost{
-  background:#e5edff;
-  color:#2563eb;
+  background: #e5edff;
+  color: #2563eb;
 }
 
 .ctaRow{
-  display:flex;
-  gap:12px;
-  margin-top:14px;
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
 }
 
+/* ================= Quotes ================= */
 .quoteBox{
-  background:#f8fafc;
-  border-radius:12px;
-  padding:20px;
-  margin-top:10px;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 10px;
 }
 
 .quoteText{
-  font-size:18px;
-  margin:0;
+  font-size: 18px;
+  margin: 0;
 }
 
 .quoteAuthor{
-  margin-top:8px;
-  color:var(--muted);
-  font-size:14px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .quoteActions{
-  margin-top:14px;
-  display:flex;
-  gap:10px;
+  margin-top: 14px;
+  display: flex;
+  gap: 10px;
 }
 
+/* ================= Spotify / Links / Footer ================= */
 .spotifyPlayer{
-  margin-top:16px;
+  margin-top: 16px;
 }
 
 .links a{
-  display:inline-block;
-  margin-right:12px;
+  display: inline-block;
+  margin-right: 12px;
   color: var(--brand);
-  text-decoration:none;
-  font-weight:600;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .footer{
-  text-align:center;
+  text-align: center;
   color: var(--muted);
-  padding:40px 0;
-  font-size:14px;
+  padding: 40px 0;
+  font-size: 14px;
+}
+
+/* ================= Mobile Responsive ================= */
+@media (max-width: 768px){
+  .header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+  }
+
+  .card{
+    padding: 20px;
+  }
+
+  .ctaRow,
+  .quoteActions{
+    flex-direction: column;
+  }
+
+  .btn{
+    width: 100%;
+    text-align: center;
+  }
+
+  .spotifyPlayer iframe{
+    height: 300px;
+  }
 }
