@@ -72,12 +72,12 @@ h1{
 }
 
 .avatarImg{
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  border-radius: 50%;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  aspect-ratio: 1 / 1;   /* 👈 這一行是重點 */
 }
+
 
 /* Nav */
 .nav a{
@@ -255,4 +255,23 @@ p{
   .spotifyPlayer iframe{
     height: 300px;
   }
+}
+/* ================= Project Evidence ================= */
+.projectImage{
+  margin-top: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 12px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.projectImage img{
+  width: 85%;          /* 👈 控制大小（80–90% 都可） */
+  max-width: 900px;   /* 👈 桌機不會太大 */
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
