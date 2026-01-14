@@ -275,3 +275,10 @@ p{
   display: block;
   border-radius: 8px;
 }
+/* ========== Project image mobile scaling ========== */
+@media (max-width: 768px){
+  .projectImage img{
+    width: 100%;
+    max-width: 100%;
+  }
+}
