@@ -6,21 +6,23 @@
   <title>Hsin-Chih Chang | Personal Page</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="wrap header">
     <div class="brand">
       <div class="avatar">
-<img
-  src="IMG_7531.JPG"
-  srcset="IMG_7531-200.jpg 200w, IMG_7531.JPG 800w"
-
+        <img
+          src="IMG_7531.JPG"
+          srcset="IMG_7531-200.jpg 200w, IMG_7531.JPG 800w"
           sizes="(max-width: 600px) 40px, 56px"
-          width="56" height="56"
+          width="56"
+          height="56"
           loading="lazy"
           alt="Hsin-Chih Chang"
           class="avatarImg"
-        >
+        />
       </div>
+
       <div>
         <h1 id="name">Hsin-Chih Chang</h1>
         <p class="sub">Student | Self-Growth | AI × Engineering × Creation</p>
@@ -31,23 +33,25 @@
       <a href="#about">About</a>
       <a href="#quotes">Quotes</a>
       <a href="#music">Music</a>
+      <a href="#project">Project</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main class="wrap">
+    <!-- About -->
     <section id="about" class="card">
       <h2>About Me</h2>
 
       <p>
-        Hi, I'm <strong>Hsin-Chih Chang</strong>, a junior student in the Department of 
-        Bio-Industrial Mechatronics Engineering at 
+        Hi, I'm <strong>Hsin-Chih Chang</strong>, a junior student in the Department of
+        Bio-Industrial Mechatronics Engineering at
         <strong>National Chung Hsing University</strong>.
         I enjoy turning ideas into real, visible projects by combining technology, creativity, and problem-solving.
       </p>
 
       <p>
-        My academic interests focus on engineering, data analysis, and AI-based applications. 
+        My academic interests focus on engineering, data analysis, and AI-based applications.
         Rather than only studying theories, I prefer learning by doing — coding, designing, testing, and improving step by step.
       </p>
 
@@ -68,6 +72,7 @@
       </div>
     </section>
 
+    <!-- Quotes -->
     <section id="quotes" class="card">
       <h2>Mindset Quotes</h2>
       <p class="hint">Automatically rotating, or change them manually.</p>
@@ -85,23 +90,37 @@
       </div>
     </section>
 
-<section id="music" class="card">
-  <h2>Music</h2>
-  <p class="hint">Here’s a playlist I enjoy.</p>
+    <!-- Music -->
+    <section id="music" class="card">
+      <h2>Music</h2>
+      <p class="hint">Here’s a playlist I enjoy.</p>
 
-  <div class="spotifyPlayer">
-    <iframe
-      src="https://open.spotify.com/embed/playlist/2oYcZixsXGmXft7c86G771"
-      width="100%"
-      height="380"
-      frameborder="0"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy">
-    </iframe>
-  </div>
-</section>
+      <div class="spotifyPlayer">
+        <iframe
+          src="https://open.spotify.com/embed/playlist/2oYcZixsXGmXft7c86G771"
+          width="100%"
+          height="380"
+          frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
 
+    <!-- Project (at the bottom) -->
+    <section id="project" class="card">
+      <h2>AI Segmentation Project</h2>
+      <p class="hint">
+        U-Net based soybean leaf segmentation with Ground Truth, Prediction,
+        Error Map, and Overlay visualization.
+      </p>
 
+      <div class="projectImage">
+        <img src="evidence_test_001.png" alt="AI segmentation result" />
+      </div>
+    </section>
+
+    <!-- Contact -->
     <section id="contact" class="card">
       <h2>Contact</h2>
       <div class="links">
