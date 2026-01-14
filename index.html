@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hsin-Chih Chang | Personal Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="wrap header">
+    <div class="brand">
+      <div class="avatar">
+        <img
+          src="assets/IMG_7531.JPG"
+          srcset="assets/IMG_7531-200.jpg 200w, assets/IMG_7531.JPG 800w"
+          sizes="(max-width: 600px) 40px, 56px"
+          width="56" height="56"
+          loading="lazy"
+          alt="Hsin-Chih Chang"
+          class="avatarImg"
+        >
+      </div>
+      <div>
+        <h1 id="name">Hsin-Chih Chang</h1>
+        <p class="sub">Student | Self-Growth | AI × Engineering × Creation</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#quotes">Quotes</a>
+      <a href="#music">Music</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section id="about" class="card">
+      <h2>About Me</h2>
+
+      <p>
+        Hi, I'm <strong>Hsin-Chih Chang</strong>, a junior student in the Department of 
+        Bio-Industrial Mechatronics Engineering at 
+        <strong>National Chung Hsing University</strong>.
+        I enjoy turning ideas into real, visible projects by combining technology, creativity, and problem-solving.
+      </p>
+
+      <p>
+        My academic interests focus on engineering, data analysis, and AI-based applications. 
+        Rather than only studying theories, I prefer learning by doing — coding, designing, testing, and improving step by step.
+      </p>
+
+      <p>
+        I believe that consistent small actions lead to meaningful growth.
+        Every project I make is not only a result, but also a record of how I think, learn, and evolve.
+      </p>
+
+      <ul class="chips">
+        <li>📚 Learning: Engineering / Physics / AI</li>
+        <li>🛠 Skills: Python / MATLAB / Web</li>
+        <li>🎯 Goal: Continuous improvement and building visible projects</li>
+      </ul>
+
+      <div class="ctaRow">
+        <button class="btn" id="btnRandomQuote">Give me a quote</button>
+        <a class="btn ghost" href="#contact">Let's connect</a>
+      </div>
+    </section>
+
+    <section id="quotes" class="card">
+      <h2>Mindset Quotes</h2>
+      <p class="hint">Automatically rotating, or change them manually.</p>
+
+      <div class="quoteBox">
+        <div class="quoteMark">“</div>
+        <p id="quoteText" class="quoteText">Start first, then get better.</p>
+        <p id="quoteAuthor" class="quoteAuthor">— Personal reminder</p>
+      </div>
+
+      <div class="quoteActions">
+        <button class="btn" id="btnPrev">Previous</button>
+        <button class="btn" id="btnNext">Next</button>
+        <button class="btn ghost" id="btnToggleAuto">Auto: On</button>
+      </div>
+    </section>
+
+<section id="music" class="card">
+  <h2>Music</h2>
+  <p class="hint">Here’s a playlist I enjoy.</p>
+
+  <div class="spotifyPlayer">
+    <iframe
+      src="https://open.spotify.com/embed/playlist/2oYcZixsXGmXft7c86G771"
+      width="100%"
+      height="380"
+      frameborder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <div class="links">
+        <a href="https://github.com/Max526" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.instagram.com/mad_kid_526?igsh=MzN3bnYxMHB0bnY4&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="mailto:s2016105@gmail.com">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© <span id="year"></span> Hsin-Chih Chang | Made with VS Code</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
