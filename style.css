@@ -106,7 +106,7 @@ h1{
 
 /* Hamburger Menu */
 .hamburger {
-  display: none;
+  display: flex; /* Always show for testing */
   flex-direction: column;
   cursor: pointer;
   background: none;
