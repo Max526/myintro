@@ -89,3 +89,42 @@ if (btnRandomQuote) {
 // Init
 renderQuote(idx);
 if (auto) startAuto();
+
+// ======= Theme Toggle =======
+const themeToggle = $("themeToggle");
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const currentTheme = document.documentElement.getAttribute("data-theme");
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    themeToggle.textContent = newTheme === "dark" ? "☀️ Light Mode" : "🌙 Dark Mode";
+  });
+}
+
+// ======= Skills Chart =======
+const ctx = document.getElementById('skillsChart');
+if (ctx) {
+  new Chart(ctx, {
+    type: 'radar',
+    data: {
+      labels: ['Python', 'MATLAB', 'Web Dev', 'AI/ML', 'Engineering', 'Physics'],
+      datasets: [{
+        label: 'Skill Level',
+        data: [80, 75, 70, 65, 85, 60],
+        fill: true,
+        backgroundColor: 'rgba(37, 99, 235, 0.2)',
+        borderColor: 'rgba(37, 99, 235, 1)',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      scales: {
+        r: {
+          beginAtZero: true,
+          max: 100
+        }
+      }
+    }
+  });
+}

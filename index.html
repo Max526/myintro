@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hsin-Chih Chang | Personal Page</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -34,6 +35,7 @@
       <a href="#music">Music</a>
       <a href="#project">Project</a>
       <a href="#contact">Contact</a>
+      <button id="themeToggle" class="btn ghost">🌙 Dark Mode</button>
     </nav>
   </header>
 
@@ -64,6 +66,9 @@
         <li>🛠 Skills: Python / MATLAB / Web</li>
         <li>🎯 Goal: Continuous improvement and building visible projects</li>
       </ul>
+
+      <h3>Skills Overview</h3>
+      <canvas id="skillsChart" width="400" height="200"></canvas>
 
       <div class="ctaRow">
         <button class="btn" id="btnRandomQuote">Give me a quote</button>
