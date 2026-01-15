@@ -89,6 +89,10 @@ h1{
 
 
 /* Nav */
+.nav{
+  position: relative;
+}
+
 .nav a{
   margin-left: 14px;
   color: var(--muted);
@@ -107,7 +111,8 @@ h1{
   cursor: pointer;
   background: none;
   border: none;
-  padding: 0;
+  padding: 10px;
+  margin-right: 10px;
 }
 
 .hamburger span {
