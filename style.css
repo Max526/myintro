@@ -120,6 +120,11 @@ h1{
   color: var(--brand);
 }
 
+#themeToggle {
+  margin-left: auto;
+  font-size: 16px;
+}
+
 /* ================= Layout ================= */
 main{
   padding: 40px 0;
@@ -272,7 +277,7 @@ p{
   .nav{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: 1px solid var(--border);
     padding-top: 10px;
   }
