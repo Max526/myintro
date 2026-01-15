@@ -104,25 +104,6 @@ h1{
   color: var(--brand);
 }
 
-/* Hamburger Menu */
-.hamburger {
-  display: flex; /* Always show for testing */
-  flex-direction: column;
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 10px;
-  margin-right: 10px;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: var(--text);
-  margin: 3px 0;
-  transition: 0.3s;
-}
-
 .nav-links {
   display: flex;
   align-items: center;
@@ -288,32 +269,12 @@ p{
     gap: 12px;
   }
 
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
+  .nav{
     width: 100%;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 10px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 10;
-  }
-
-  .nav-links.open {
     display: flex;
-  }
-
-  .nav-links a {
-    margin: 10px 0;
-    font-size: 16px;
+    justify-content: space-around;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
   }
 
   .card{
